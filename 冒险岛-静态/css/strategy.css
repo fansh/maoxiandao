@@ -1,0 +1,330 @@
+main{
+	height:2095px;
+}
+footer{
+	background:#fff;
+}
+
+.header_pic{
+	background:url('../images/strategy/kvw.jpg') no-repeat;
+}
+.header_bg2{
+	width:1188px;
+	margin:0 0 0 366px;
+	background:url('../images/strategy/kv.jpg') no-repeat;
+}
+
+.strategy_center{
+	position:absolute;
+	top:155px;
+	left:810px;
+	font-size:68px;
+	text-align:center;
+	font-weight:bold;
+	color:yellow
+}
+
+.search{
+	width:670px;
+	height:61px;
+	position:relative;
+	margin:-200px auto 0;
+	background:url('../images/strategy/search.png') no-repeat;
+}
+.search>input{
+	width:550px;
+	height:50px;
+	position:absolute;
+	top:5px ;
+	left:47px;
+	border:none;
+	outline:none;
+	font-size:18px;
+	background:#25283c;
+}
+
+.searchonly{
+	height:40px;
+	line-height:40px;
+	color:white;
+	text-align:center;
+	font-size:16px;
+}
+.search_bo{
+	width:600px;
+	margin:0 auto;
+	text-align:center;
+}
+.search_bo>a{
+	width:100px;
+	height:30px;
+	line-height:30px;
+	display:block;
+	float:left;
+	margin:0 10px 0 0; 
+	font-size:14px;
+	border:3px solid #5b6c93;
+	border-radius:15px;
+	color:white;
+	background:#5b93f0;
+}
+
+
+.GL_con{
+	width:100%;
+	/*height:500px;*/
+	padding:34px 0;
+	/*background:skyblue;*/
+}
+
+.GL_carousel{
+	width:1200px;
+	height:280px;
+	margin:0 auto;
+	/*background:orange;*/
+}
+.GL_carousel_left{
+	width:590px;
+	height:280px;
+	float:left;
+	overflow:hidden;
+	background:pink;
+}
+.left_pic{
+	/*float:left;*/
+}
+.left_pic>ul{
+	float:left;
+	position:relative;
+	margin:240px 0 0 480px;
+}
+.left_pic>ul>li{
+	width:20px;
+	height:20px;
+	float:left;
+	/*position:absolute;*/
+	margin:0 3px;
+	background:red;
+}
+.left_pic>ul>li>i{
+	width:20px;
+	height:20px;
+	display:block;
+	position:absolute;
+	z-index:3;
+	border-radius:50%;
+	background:#aaa;
+}
+.left_pic>ul>li>input{
+	width:20px;
+	height:20px;
+	position:absolute;
+	display:block;
+	float:left;
+	z-index:4;
+	opacity:0;
+}
+.left_pic>ul>li>div{
+	width:590px;
+	height:280px;
+	float:left;
+	display:none;
+	position:absolute;
+	top:-240px;
+	left:-480px;
+	background:skyblue;
+}
+.left_pic>ul>li>input:checked+div{
+	display:block;
+}
+.left_pic>ul>li>input:checked+div+i{
+	background:#fff;
+}
+.left_pic>ul>li>input:hover+div+i{
+	width:24px;
+	height:24px;
+	margin:-2px 0 0 -2px;
+	background:#fff;
+}
+
+
+
+.GL_carousel_right{
+	width:590px;
+	height:280px;
+	float:right;
+	background:#fff;
+}
+.right_inner{
+	width:542px;
+	height:257px;
+	position:relative;
+	padding:23px 24px 0;
+	/*background:red;*/
+}
+.right_inner>h1{
+	height:23px;
+	line-height:23px;
+	padding:0 0 0 29px;
+	/*margin:23px 0 13px 0;*/
+	border-bottom:1px solid #ccc;
+	font-size:20px;
+	color:#626671;
+}
+.right_inner>i{
+	width:17px;
+	height:23px;
+	display:block;
+	position:absolute;
+	top:20px;
+	left:25px;
+	background:url('../images/strategy/icon1.png') no-repeat;
+}
+.right_inner>ul{
+	width:542px;
+	height:212px;
+	padding:20px 0 0 0;
+	/*background:red;*/
+}
+.right_inner>ul>li>span{
+	width:60px;
+	height:20px;
+	display:block;
+	float:left;
+	line-height:20px;
+	font-size:14px;
+	color:white;
+	background:#5b93f0;
+}
+.right_inner>ul>li{
+	height:20px;
+	line-height:20px;
+	margin:0 0 15px 0;
+}
+.right_inner>ul>li>a{
+	font-size:14px;
+	margin:0 0 0 10px;
+}
+.right_inner>ul>li>i{
+	width:30px;
+	height:20px;
+	line-height:20px;
+	display:block;
+	float:right;
+	font-size:14px;
+}
+
+
+
+
+.GL_content{
+	width:1152px;
+	height:1155px;
+	padding:24px;
+	margin:25px auto 0;
+	/*box-sizing:border-box;*/
+	background:#fff;
+}
+.GL_content_inner{
+	width:1152px;
+	height:1155px;
+	/*background:hotpink;*/
+}
+.GL_content_inner>ul{
+	position:relative;
+}
+.GL_content_inner>ul>li{
+	height:33px;
+	line-height:33px;
+	float:left;
+	/*padding:0 10px;*/
+	margin:0 20px;
+}
+.GL_content_inner>ul>li>h1{
+	font-size:22px;
+}
+.GL_content_inner>ul>li>em{
+	width:17px;
+	height:23px;
+	display:block;
+	position:absolute;
+	top:3px;
+	left:1px;
+	background:url('../images/strategy/icon1.png') no-repeat;
+}
+.GL_content_inner>ul>li>h2{
+	font-size:16px;
+	color:#626671;
+}
+.GL_content_inner>ul>li>input{
+	width:70px;
+	height:33px;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	opacity:0;
+}
+.GL_content_inner>ul>li>div{
+	width:1152px;
+	height:1096px;
+	display:none;
+	position:absolute;
+	top:34px;
+	left:0px;
+	padding:25px 0 0 0;
+	border-top:1px solid #ccc;
+	/*background:orange;*/
+}
+.GL_content_inner>ul>li>i{
+	width:65.25px;
+	height:0;
+	/*display:block;*/
+	border-bottom:3px solid red;
+}
+.GL_content_inner>ul>li:hover{
+	border-bottom:3px solid red;
+}
+.GL_content_inner>ul>li>input:checked+div{
+	display:block;
+}
+.GL_content_inner>ul>li>input:checked+div+i{
+	display:block;
+}
+.GL_content_inner>ul>li>div>ul>li{
+	height:21px;
+	line-height:21px;
+	padding:0 0 25px 0;
+	margin:0 0 25px 0;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+}
+.GL_content_inner>ul>li>div>ul>li>i{
+	width:70px;
+	height:21px;
+	display:block;
+	float:left;
+	text-align:center;
+	color:white;
+	background:#5b93f0;
+}
+.GL_content_inner>ul>li>div>ul>li>a{
+	margin:0 0 0 10px;
+	font-size:14px;
+}
+.GL_content_inner>ul>li>div>ul>li>span{
+	float:right;
+}
+
+.GL_content_inner>ul>li>div>a{
+	width:70px;
+	height:21px;
+	display:block;
+	line-height:21px;
+	float:right;
+	margin:30px 0 0 0;
+	font-size:16px;
+	color:white;
+	text-align:center;
+	background:#5b93f0;
+}

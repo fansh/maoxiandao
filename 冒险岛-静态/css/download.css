@@ -1,0 +1,322 @@
+.news_mainarea_con{
+	height:2175px;
+}
+
+
+.news_mainarea{
+	/*border-bottom:1px solid #ccc;*/
+}
+.bottom_sidebar{
+	height:1634px;
+}
+.newsCenter_article{
+	width:1091px;
+	height:2205px;
+}
+.newsCenter_article>ul>li{
+	width:363.6px;
+	height:44px;
+	line-height:44px;
+	border-top:5px solid #dae0e8;
+	border-bottom:5px solid #dae0e8;
+}
+.newsCenter_article>ul>li>i{
+	width:363.6px;
+}
+.newsCenter_article>ul>li>div{
+	height:600px;
+	top:54px;
+	padding:30px 0 0 0;
+}
+.newsCenter_article>ul>li>input{
+	width:363.6px;
+}
+.newsCenter_article>ul>li .test{
+	width:1091px;
+	height:1000px;
+	/*background:black;*/
+}
+.newsCenter_article>ul>li>input:checked+div+i{
+	border-top:5px solid red;
+}
+.newsCenter_article>ul>li:hover{
+	border-bottom:5px solid red;
+}
+
+
+.newsCenter_article>ul>li>div>h2{
+	height:24px;
+	line-height:24px;
+	font-size:18px;
+	margin:0 0 30px 0;
+	/*background:skyblue;*/
+}
+.newsCenter_article>ul>li>div>h3{
+	height:30px;
+	line-height:30px;
+	text-align:left;
+}
+.newsCenter_article>ul>li>div>.b_detail{
+	width:1001px;
+	height:80px;
+	line-height:20px;
+	padding:0 0 0 90px;
+	text-align:left;
+	font-size:14px;
+	/*background:orange;*/
+	background:url('../images/download/download-spr.png') no-repeat 0 -238px;
+}
+.newsCenter_article>ul>li>div>p{
+	margin:20px 0 0 -61px;
+	padding:0 0 30px 0;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+
+.download_pic{
+	width:1091px;
+	text-align:left;
+	/*background:red;*/
+}
+.download_pic img{
+	margin:0 0 0 230px;
+}
+.download_pot>span{
+	width:190px;
+	height:40px;
+	line-height:40px;
+	display:block;
+	float:left;
+	margin:0 0 0 230px;
+	border-radius:6px;
+	font-size:15px;
+	background:#353b60;
+	color:#ffffff;
+}
+.article_a>.tab1{
+	height:20px;
+	line-height:20px;
+	margin:10px 0 0 0;
+}
+.article_a .tab1 td{
+	border:1px solid #ccc;
+}
+.article_a>h3{
+	height:30px;
+	line-height:30px;
+	padding:0 0 7px 0;
+	margin:40px 0 0px 0;
+	border-bottom:3px solid #ccc;
+	font-size:18px;
+}
+.article_a>h6{
+	font-weight:normal;
+	text-align:left;
+}
+
+
+
+/*表格*/
+.TAB{
+	width:100%;
+	margin:30px 0 0 0;
+}
+.TAB .tab2{
+	width:100%;
+	height:25px;
+	line-height:25px;
+}
+.TAB>.tab2 td{
+	border:1px solid #bfbfbf;
+}
+
+.jiasuqi{
+	margin:20px 0 0 0;
+}
+.jiasuqi>div{
+	width:122px;
+	height:54px;
+	float:left;
+	margin:20px 0 0 0;
+	background:url('../images/download/download-spr.png') no-repeat 0 -320px;
+}
+.jiasuqi>p{
+	width:969px;
+	float:left;
+}
+.jiasuqi a{
+	width:200px;
+	height:40px;
+	display:block;
+	float:left;
+	font-size:18px;
+	border-radius:6px;
+	margin:0 0 0 82px;
+	color:white;
+	background:#219ced;
+}
+
+
+/*电脑配置*/
+.article_a .homeM,.article_a .personal{
+	width:510px;
+	height:280px;
+	float:left;
+	margin:10px 0 0 0;
+}
+.article_a .personal{
+	float:right;
+}
+.article_a .homeM>h2,.article_a .personal>h2{
+	height:30px;
+	line-height:30px;
+	font-size:16px;
+	text-align:left;
+}
+.article_a .homeM>ul,.article_a .personal>ul{
+	float:left;
+	position:relative;
+	border-bottom:1px solid #ff7701;
+}
+.article_a .homeM>ul>li,.article_a .personal>ul>li{
+	width:100px;
+	height:35px;
+	line-height:35px;
+	float:left;
+	font-size:14px;
+}
+.article_a .homeM>ul>li>input,.article_a .personal>ul>li>input{
+	width:136px;
+	height:35px;
+	display:block;
+	position:absolute;
+	top:0;
+	opacity:0;
+	cursor:pointer;
+}
+.article_a .homeM>ul>li>div,.article_a .personal>ul>li>div{
+	width:510px;
+	height:200px;
+	float:left;
+	display:none;
+	position:absolute;
+	top:35px;
+	left:0;
+	padding:15px 0 0 0;
+	text-align:left;
+	font-size:15px;
+	border-top:1px solid #ff7701;
+	background:#fff;
+}
+.article_a .homeM>ul>li:hover,.article_a .personal>ul>li:hover{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	background:#ff7701;
+}
+.article_a .homeM>ul>li>div>p>span,.article_a .personal>ul>li>div>p>span{
+	margin:0 50px 0 0;
+}
+.article_a .homeM>ul>li>input:checked+div,.article_a .personal>ul>li>input:checked+div{
+	display:block;
+}
+.article_a .homeM>ul>li>input:hover+div,.article_a .personal>ul>li>input:hover+div{
+	display:block;
+	z-index:3;
+}
+
+
+/*驱动下载*/
+.qudong{
+	overflow:hidden;
+	margin:30px 0 0 0;
+}
+.qudong>li{
+	width:544.5px;
+	float:left;
+	position:relative;
+	margin:0 0 50px 0;
+	border-right:1px solid #ccc;
+	background:#e5e5e5;
+}
+.qudong>li:nth-child(2){
+	border:none;
+}
+.qudong>li>a{
+	width:80px;
+	height:20px;
+	line-height:20px;
+	display:block;
+	float:left;
+	position:absolute;
+	left:233px;
+	bottom:-30px;
+	font-size:14px;
+	background:#aaa;
+}
+.qudong>li>a>i{
+	width:10px;
+	height:11px;
+	display:block;
+	float:left;
+	position:relative;
+	top:4px;
+	left:4px;
+	background:url('../images/download/download-spr.png') no-repeat 0 -192px;
+}
+.qudong>li>img{
+	display:block;
+	margin:5px 0 5px 103px;
+}
+
+.xianka{
+	width:1091px;
+	height:48px;
+	margin:20px 0 0 0;
+	/*background:red;*/
+}
+.xianka>li{
+	width:218px;
+	height:48px;
+	line-height:48px;
+	float:left;
+	margin:0 25px 0 0;
+	/*background:skyblue;*/
+}
+.xianka>li>a{
+	width:218px;
+	height:48px;
+	position:relative;
+	display:block;
+	background:url('../images/download/download-spr.png') no-repeat 0 -48px;
+}
+.xianka>li>a>span{
+	width:100px;
+	height:48px;
+	display:block;
+	position:absolute;
+	top:-12px;
+	left:50px;
+	font-size:14px;
+	background:url
+}
+.xianka>li>a>em{
+	width:90px;
+	height:20px;
+	line-height:20px;
+	display:block;
+	position:absolute;
+	top:28px;
+	left:50px;
+	font-size:14px;
+	background:#aaa;
+}
+.xianka>li>a>i{
+	width:10px;
+	height:11px;
+	display:block;
+	position:absolute;
+	top:33px;
+	left:54px;
+	background:url('../images/download/download-spr.png') no-repeat 0 -192px;
+}

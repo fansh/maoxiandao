@@ -1,0 +1,486 @@
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: center; }
+ul, li { list-style-type: none; margin:0px; padding:0px;}
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size: 12px; font-family:"微软雅黑";  }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+aside section,.body{display:block; width:1000px; margin:0 auto;}
+a, a:link { color: #000; text-decoration: none; }/*设置a标签基本样式与伪类选择器设置*/
+a:visited {}
+a:active, a:hover { text-decoration: none; color:#d00000; }
+a:focus { outline: none; } 
+.orange { color:#F26E01;}
+
+.clear {
+	clear:both;
+}
+
+/*公共样式*/
+header{
+	width:100%;
+	/*height:652px;*/
+	/*background:skyblue;*/
+}
+main{
+	width:100%;
+	position:relative;
+	background:#ececec;
+}
+footer{
+	width:100%;
+	/*height:300px;*/
+	margin:0 auto;
+	/*background:aqua;*/
+}
+
+
+
+/*腾讯游戏排行榜*/
+.game_rank{
+	width:698px;
+	height:456px;
+	position:absolute;
+	top:40px;
+	right:0px;
+	border:1px solid #ccc;
+	z-index:13;
+	/*background:red;*/
+}
+/*.game_rank>div{
+	width:232px;
+	height:456px;
+	float:left;
+}*/
+/*.rank_a{
+	background:red;
+}
+.rank_b{
+	background:orange;
+}
+.rank_c{
+	background:pink;
+}*/
+
+
+
+/*广告头部*/
+.header_top{
+	width:100%;
+	height:40px;
+	border-bottom:1px solid #ccc;
+	background:url('../images/index/ost-bg.png') repeat-x -220px 0px;
+}
+.header_top>ul{
+	width:990px;
+	height:40px;
+	margin:0 auto;
+}
+.header_top>ul>li{
+	width:220px;
+	height:40px;
+	line-height:40px;
+	float:left;
+	overflow:hidden;
+	cursor:pointer;
+}
+.header_top>ul>li:nth-child(2):hover{
+	overflow:visible;
+	position:absolute;
+	top:0;
+	left:0 auto;
+	z-index:5;
+}
+.header_top>ul>li:first-of-type{
+	position:relative;
+	z-index:6;
+}
+.header_top>ul>li:last-of-type{
+	text-align:right;
+	float:right;
+}
+.header_top>ul>li>h3{
+	font-size:13px;
+	float:left;
+	position:relative;
+	font-weight:normal;
+}
+.header_top>ul>li>h3:first-of-type{
+	text-align:left;
+	width:118px;
+}
+.header_top>ul>li>h3:last-of-type{
+	width:102px;
+	position:relative;
+	text-align:left;
+	z-index:14px;
+}
+.header_top>ul>li>h3>img{
+	position:relative;
+	top:4px;
+	left:0;
+}
+.icon_arrow{
+	width:11px;
+	height:11px;
+	display:block;
+	position:absolute;
+	top:14px;
+	left:91px;
+	background:url('../images/index/ost-bg.png') no-repeat -150px -134px;
+}
+.header_top>ul>li>a{
+	width:220px;
+	height:40px;
+	display:inline-block;
+	background:url('../images/index/ost-bg.png') no-repeat 0px -38px;
+}
+
+
+
+/*广告头部导航*/
+.header_banner{
+	width:100%;
+	height:611px;
+	position:relative;
+	background:url('../images/index/main_kv0711.jpg') no-repeat;
+}
+.header_banner>.banner_top{
+	width:100%;
+	height:100px;
+	background:rgba(40, 47, 88, .9);
+}
+.header_banner .topBar{
+	width:1440px;
+	height:100px;
+	/*position:relative;*/
+	margin:0 auto;
+}
+.topBar .header_logo{
+	width:120px;
+	height:70px;
+	float:left;
+	margin:16px 0 14px 10px;
+}
+.topBar .header_logo>a{
+	width:120px;
+	height:70px;
+	display:block;
+	background:url('../images/index/header-spr.png') no-repeat 0px -372px;
+}
+.topBar>ul{
+	width:;
+	height:100px;
+	float:left;
+	margin:0 0 0 20px;
+}
+.topBar>ul>li{
+	width:100px;
+	height:100px;
+	float:left;
+	position:relative;
+}
+.topBar>ul>li>a{
+	width:100px;
+	height:100px;
+	line-height:100px;
+	display:block;
+	text-align:center;
+	font-size:15px;
+	color:white;
+}
+
+
+
+
+/*下拉菜单*/
+.dropDown{
+	width:100%;
+	height:255px;
+	display:none;
+	position:absolute;
+	top:100px;
+	left:0;
+	z-index:1;
+	background:rgba(43, 46, 71, .85);
+}
+.topBar>.nav>li>ul{
+	width:100%;
+	height:255px;
+	display:none;
+	position:absolute;
+	top:100px;
+	left:0;
+	padding:10px 0 0 0;
+	z-index:10;
+}
+.nav>li>.border{
+	border-right:1px solid #49475d;
+}
+.nav>li>ul>li{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:15px;
+}
+.nav>li>ul>li>a{
+	color:white;
+}
+.nav>li>ul>li:hover a{
+	color:#fff000;
+}
+.nav>li:hover>ul{
+	padding:8px 0 0 0;
+	border-top:2px solid #fff000;
+}
+.topBar>ul:hover>li>ul{
+	display:block;
+}
+.topBar>ul:hover+div{
+	display:block;
+}
+
+
+
+/*公众号及社区*/
+.topBar>.gongzhonghao{
+	width:173px;
+	height:40px;
+	float:left;
+	border-radius:20px;
+	margin:30px 0 30px 15px;
+	background:#ff8400;
+}
+.topBar>.gongzhonghao>a{
+	width:173px;
+	height:40px;
+	line-height:40px;
+	position:relative;
+	text-align:center;
+	font-size:14px;
+	display:block;
+	color:white;
+}
+.topBar>.gongzhonghao>a>h6{
+	position:absolute;
+	top:0;
+	left:20px;
+}
+.topBar>.gongzhonghao>a>span{
+	width:0px;
+	height:0px;
+	display:block;
+	position:absolute;
+	top:14px;
+	left:145px;
+	border:6px solid #fff;
+	border-right-color:transparent;
+	border-top-color:transparent;
+	border-bottom-color:transparent;
+}
+
+
+/*公众号及社区下拉二维码*/
+.dropDown_QRcode{
+	width:245px;
+	height:138px;
+	padding:15px 15px 15px 15px;
+	background:#33364d;
+}
+.dropDown_QRcode>.QRcode_left{
+	float:left;
+}
+.QRcode_right{
+	float:right;
+}
+.dropDown_QRcode img{
+	width:112px;
+	height:112px;
+	display:block;
+	float:left;
+}
+.qr_box{
+	display:none;
+	padding:30px 0 0 0;
+	position:absolute;
+	top:40px;
+	left:-45px;
+}
+.topBar>.gongzhonghao>a:hover>div{
+	display:block;
+}
+
+
+.topBar>.login{
+	width:102px;
+	height:36px;
+	float:left;
+	margin:30px 0px 30px 35px;
+	border-radius:20px;
+	border:2px solid #ff8400;
+}
+.topBar>.login>a{
+	width:102px;
+	height:36px;
+	position:relative;
+	line-height:36px;
+	text-align:center;
+	display:block;
+	font-size:14px;
+	color:white;
+}
+.topBar>.login>a>h6{
+	position:absolute;
+	left:25px;
+	top:0;
+}
+.topBar>.login>a>span{
+	width:9px;
+	height:13px;
+	display:block;
+	position:absolute;
+	top:10px;
+	left:70px;
+	background:url('../images/index/header-spr.png') no-repeat -248px 0;
+}
+
+
+
+/*slogan*/
+.slogan{
+	width:520px;
+	height:240px;
+	position:absolute;
+	bottom:-6px;
+	left:700px;
+}
+.slogan img{
+	width:525px;
+	height:225px;
+}
+
+/*banner_box 游戏下载*/
+.banner_box{
+	width:266px;
+	position:absolute;
+	top:202px;
+	right:210px;
+}
+.banner_box .banner_box_top{
+	width:266px;
+	height:218px;
+	background:url('../images/index/download-icon-spr.png') no-repeat;
+	overflow:hidden;
+}
+.banner_box .banner_box_top a{
+	width:266px;
+	height:218px;
+	display:block;
+}
+.banner_box .banner_box_bottom{
+	width:266px;
+	height:135px;
+	background:url('../images/index/header-spr.png') no-repeat 10px -226px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.banner_box .banner_box_bottom>a{
+	height:60px;
+	height:60px;
+	line-height:60px;
+	display:block;
+	position:relative;
+	text-align:center;
+	font-size:15px;
+	color:#b6d3f7;
+}
+.downL span{
+	width:41px;
+	height:18px;
+	line-height:18px;
+	display:block;
+	float:left;
+	position:absolute;
+	top:21px;
+	left:60px;
+	color:white;
+	border-radius:10px;
+	background:green;
+}
+.downL h6{
+	position:absolute;
+	top:0;
+	left:108px;
+}
+.recharge span{
+	width:30px;
+	height:30px;
+	float:left;
+	position:absolute;
+	top:16px;
+	left:70px;
+	display:block;
+	overflow:hidden;
+	background:url('../images/index/header-spr.png') no-repeat -127px -374px;
+}
+.recharge h6{
+	position:absolute;
+	top:0;
+	left:115px;
+}
+
+
+
+
+/*网页底部---footer*/
+.cpright_box{
+	width:1080px;
+	margin:0 auto;
+	/*background:#541;*/
+}
+footer>.cpright_box>div{
+	width:1080px;
+	height:;
+	padding:20px 0;
+	/*float:left;*/
+	/*background:red;*/
+}
+.footer_left{
+	width:390px;
+	float:left;
+}
+.footer_left>a{
+	float:left;
+}
+.footer_left>a>img{
+	margin:10px 0 0 10px;
+}
+.footer_left>a>span{
+	width:110px;
+	height:33px;
+	margin:10px 0 0 10px;
+	display:block;
+	overflow:hidden;
+	background:url('../images/index/logo1.png') no-repeat 0px -183px;
+}
+
+
+.footer_right{
+	float:left;
+	white-space:nowrap;
+}
+.footer_right>li{
+	height:20px;
+	font: 13px/20px "微软雅黑","宋体";
+}
+.footer_right>li:first-of-type{
+	height:25px;
+	line-height:20px;
+}
+.footer_right>li:last-of-type{
+	font: 12px/20px "微软雅黑","宋体";
+}
+.footer_right>li:last-of-type>img{
+	position:relative;
+	top:3px;
+}

@@ -1,0 +1,98 @@
+.header_pic{
+	width:100%;
+	height:470px;
+	position:relative;
+	background:url('../images/huodong/pc_bg1w.jpg') no-repeat;
+}
+.header_bg2{
+	width:1200px;
+	height:470px;
+	margin:0 auto;
+	background:url('../images/huodong/pc_bg1.jpg') no-repeat;
+}
+
+main{
+	width:100%;
+	height:4360px;
+	position:relative;
+}
+footer{
+	width:100%;
+	height:124px;
+	background:#1a1a1a;
+}
+
+
+
+
+.Eheader_logo{
+	width:100%;
+	height:80px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url('../images/huodong/navbg.png') repeat-x;
+}
+.Eheader_login{
+	width:1200px;
+	height:80px;
+	margin:0 auto;
+	/*background:red;*/
+}
+.Eheader_login>a{
+	display:block;
+	float:left;
+	margin:10px 20px 0 0;
+}
+.Eheader_login>h1{
+	float:left;
+	padding:10px 0 0 0;
+	color:white;
+}
+.Eheader_login>h1>span{
+	font-size:28px;
+	color:white;
+}
+.E_login{
+	width:271px;
+	height:80px;
+	float:right;
+}
+.E_login>h2{
+	line-height:80px;
+	float:left;
+	color:#ccc;
+}
+.E_login>h2>a{
+	color:white;
+}
+.E_login>p{
+	height:51px;
+	width:60px;
+	line-height:25px;
+	float:left;
+	padding:0 0 0 60px;
+	margin:15px 0 0 15px;
+	font-size:15px;
+	color:white;
+	background:url('../images/huodong/s-qc-img.jpg') no-repeat;
+}
+
+
+.Ecopyright{
+	width:100%;
+	height:84px;
+	padding:20px 0;
+	text-align:center;
+	font-size:13px;
+}
+.Ecopyright>p{
+	height:18px;
+	line-height:18px;
+	margin:0 0 10px 0;
+	color:white;
+}
+.Ecopyright>p>a{
+	color:white;
+	font-size:13px;
+}

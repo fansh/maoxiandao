@@ -1,0 +1,90 @@
+.newsCenter_article>p{
+	height:44px;
+	line-height:22px;
+	padding:0 0 0 8px;
+	border-left:8px solid #484450;
+	font-size:19px;
+	color:#c25521;
+}
+.inputbox{
+	height:254px;
+	/*background:red;*/
+}
+.input_inner{
+	width:1091px;
+	height:150px;
+	padding:20px 0;
+	margin:0 0 24px 0;
+	background:#f2f2f2;
+}
+
+.line1{
+	width:1091px;
+	height:40px;
+	margin:0 0 10px 0;
+}
+.line1>span{
+	float:left;
+	width:120px;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	text-align:center;
+	margin:-right:25px;
+}
+.line1>div{
+	float:left;
+	height:40px;
+}
+.line1>div>input{
+	width:440px;
+	height:18px;
+	line-height:18px;
+	border:2px solid #fff;
+	padding:9px 7px ;
+	font-size:14px;
+}
+.line1>div>select{
+	width:146px;
+	height:36px;
+	border:2px solid #fff;
+}
+.line1>.yanzhengma>input{
+	width:168px;
+	height:18px;
+}
+.line1>.yanzhengma>img{
+	position:relative;
+	height:25px;
+	top:15px;
+	left:1px;
+}
+
+.duihuan{
+	width:134px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	display:block;
+	margin:45px 0 0 0;
+	border:7px solid #2e324c;
+	color:#636364;
+
+}
+.buzhou{
+	width:596px;
+	height:38px;
+	margin:50px 0 0 0 ;
+	padding:0 0 18px 0;
+	overflow:hidden;
+	background:url('../images/exchange/progress.png') no-repeat;
+}
+.shuoming>ol{
+	width:680px;
+	height:84px;
+	margin:15px 0 0 -40px;
+}
+.shuoming>ol>li{
+	line-height:1.8em;
+	font-size:13px;
+}

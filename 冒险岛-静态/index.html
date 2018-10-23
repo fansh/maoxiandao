@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/common.css" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<script src="./js/index.js"></script>
+	<script>
+		function nav (){
+			let menu = [
+				['官网首页','index',[]],
+				['新闻中心','index',
+					[['全部'],['新闻','news_list'],['公告'],['活动'],['媒体'],['玩家']],
+					'border'
+				],
+				['游戏资料','index',
+					[['新手指南'],['平行世界'],['游戏特色'],['资料站'],['尬萌特工队','gameng']],
+					'border'
+				],
+				['下载中心','download',[]],
+				['自助服务','index',
+					[['账号充值','pay'],['兑换中心','exchange'],['在线客服'],['安全中心'],['安全模式'],['封号查询','','color:#fff000'],['方块妞的工具箱','','font-size:14px']],
+					'border'
+				],
+				['玩家互动','index',
+					[['攻略中心','strategy'],['活动中心','events'],['官方直播'],['同萌会'],['官方微博'],['官方论坛']],
+					'border'
+				],
+				['在线商城','index',[]]
+			]; 
+			for(let i =0;i<=menu.length;i++){
+				document.write('<li><a href="'+menu[i][1]+'.html">'+menu[i][0]+'</a><ul class="'+menu[i][3]+'">');
+				for(let j = 0;j<menu[i][2].length;j++){
+					document.write('<li><a href="'+menu[i][2][j][1]+'.html" style="'+menu[i][2][j][2]+'">'+menu[i][2][j][0]+'</a></li>');
+				}
+				document.write('</ul></li>');
+			}
+		} 
+	</script>
+</head>
+<body>
+	<!-- 网页头部 -->
+	<header>
+		<section class="header_top">
+			<ul>
+				<li>
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/index/li.jpg" />
+					</a>
+				</li>
+				<li>
+					<h3>
+						<img src="./images/index/logo.png" />
+						<a href="">成长守护平台</a>
+					</h3>
+					<h3>
+						<a href="">腾讯游戏排行榜</a>
+						<i class="icon_arrow"></i>
+						<section class="game_rank">
+							<div class="rank_a"></div>
+							<div class="rank_b"></div>
+							<div class="rank_c"></div>
+						</section>
+					</h3>
+				</li>
+			</ul>
+		</section>
+
+		<!-- 官网首页导航 -->
+		<section class="header_banner">
+			<div class="banner_top">
+				<div class="topBar">
+					<div class="header_logo">
+						<a href="#"></a>
+					</div>
+					<ul class="nav">
+						<script>
+							// document.write(nav());
+							nav();
+						</script>
+						<!-- <li>
+							<a href="#">官网首页</a>
+							<ul></ul>
+						</li>
+						<li>
+							<a href="#">新闻中心</a>
+							<ul class="border">
+								<li><a href="">全部</a></li>
+								<li><a href="./news_list.html" target="_blank">新闻</a></li>
+								<li><a href="">公告</a></li>
+								<li><a href="">活动</a></li>
+								<li><a href="">媒体</a></li>
+								<li><a href="">玩家</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">游戏资料</a>
+							<ul class="border">
+								<li><a href="">新手指南</a></li>
+								<li><a href="">平行世界</a></li>
+								<li><a href="">游戏特色</a></li>
+								<li><a href="">资料站</a></li>
+								<li><a href="./gameng.html" target="_blank">尬萌特工队</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="./download.html" target="_blank">下载专区</a>
+							<ul></ul>
+						</li>
+						<li>
+							<a href="#">自助服务</a>
+							<ul class="border">
+								<li><a href="./pay.html" target="_blank">账号充值</a></li>
+								<li><a href="./exchange.html" target="_blank">兑换中心</a></li>
+								<li><a href="">在线客服</a></li>
+								<li><a href="">安全中心</a></li>
+								<li><a href="">安全模式</a></li>
+								<li><a href="" style="color:#fff000;">封号查询</a></li>
+								<li><a href="" style="font-size:14px;">方块妞的工具箱</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">玩家互动</a>
+							<ul class="border">
+								<li><a href="./strategy.html" target="_blank">攻略中心</a></li>
+								<li><a href="./events.html" target="_blank">活动中心</a></li>
+								<li><a href="">官方直播</a></li>
+								<li><a href="">同萌会</a></li>
+								<li><a href="">官方微博</a></li>
+								<li><a href="">官方论坛</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">在线商城</a>
+							<ul></ul>
+						</li> -->
+					</ul>
+					<div class="dropDown"></div>
+					<div class="gongzhonghao">
+						<a href="#">
+							<h6>公众号及社区APP</h6>
+							<span></span>
+							<div class="qr_box">
+								<div class="dropDown_QRcode">
+									<div class="QRcode_left">
+										<img src="./images/index/qc-shequ.png" />
+										<p>冒险岛2社区APP</p>
+									</div>
+									<div class="QRcode_right">
+										<img src="./images/index/qc-wx.jpg" />
+										<p>冒险岛2微信公众号</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="login">
+						<a href="#">
+							<h6>登录</h6>
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- slogan -->
+			<div class="slogan">
+				<a href="">
+					<img src="./images/index/slogan0711.png" />
+				</a>
+			</div>
+		</section>
+
+		<!-- banner_box游戏下载 -->
+		<div class="banner_box">
+			<div class="banner_box_top">
+				<a href="#"></a>
+			</div>
+			<div class="banner_box_bottom">
+				<a href="#" class="downL">
+					<span>NEW</span>
+					<h6>同萌会-视频中心</h6>
+				</a>
+				<a href="#" class="recharge">
+					<span></span>
+					<h6>蘑菇币充值</h6>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- 网页主体 -->
+	<main>
+		<!-- 网页主体上半部分 -->
+		<section class="main_box">
+			<section class="mainbox_content">
+				<div class="bar_area">
+					<ul>
+						<li>
+							<a href="">
+								新手指南
+								<span class="new"></span>
+								<i></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								职业介绍
+								<span class="new"></span>
+								<i></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								活动中心
+								<span class="new"></span>
+								<i></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								攻略中心
+								<span></span>
+								<i></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								同萌会
+								<span></span>
+								<i></i>
+							</a>
+						</li>
+						<li class="banben">
+							<a href="">
+								版本中心
+								<span></span>
+								<i></i>
+							</a>
+							<div class="banben_list">
+								<ul>
+									<script>
+										banben();
+									</script>
+									<!-- <li><a href="">进击！魔方之眼</a></li>
+									<li><a href="">七夕鹊桥来相会</a></li>
+									<li><a href="">觉醒公测 海量更新</a></li>
+									<li><a href="">暑期版本大爆料</a></li>
+									<li><a href="">快乐端午粽香四溢</a></li>
+									<li><a href="">苏醒的蘑菇王</a></li>
+									<li><a href="">五一欢庆版</a></li>
+									<li><a href="">春季总动员vol.3</a></li>
+									<li><a href="">春季总动员vol.2</a></li>
+									<li><a href="">春季总动员vol.1</a></li>
+									<li><a href="">新冒险·新春曲</a></li>
+									<li><a href="">新冒险·迎新曲</a></li>
+									<li><a href="">新冒险·圣诞曲</a></li>
+									<li><a href="">真心话·新冒险</a></li>
+									<li><a href="">新冒险·续章</a></li> -->
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="bar_area_link">
+						<a href="">平行世界</a>
+						<a href="">资料站</a>
+						<a href="">福利中心</a>
+						<a href="">兑换中心</a>
+						<a href="">安全中心</a>
+						<a href="">周边商城</a>
+						<a href="">官方微博</a>
+						<a href="">官方论坛</a>
+					</div>
+				</div>
+				
+				<div class="mid_area">
+					<div class="mid_area_top">
+						<div class="newsBox">
+							<div class="newsBox_con">
+								<ul>
+									<li>
+										<h3>全部</h3>
+										<input type="radio" name="radioNews" checked/>
+										<div>
+											<a href="#" class="article_hot">觉醒公测开启 海量更新携超强福利点燃夏季!</a>
+											<ul class="article_con_1">
+												<li>
+													<span></span>
+													<a href="#">【新版预告】全新副本“魔方之眼”8月23日登场</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【新版预告】全新副本“魔方之眼”8月23日登场</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【新版预告】全新副本“魔方之眼”8月23日登场</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【新版预告】全新副本“魔方之眼”8月23日登场</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【新版预告】全新副本“魔方之眼”8月23日登场</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【新版预告】全新副本“魔方之眼”8月23日登场</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【新版预告】全新副本“魔方之眼”8月23日登场</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>新闻</h3>
+										<input type="radio" name="radioNews" />
+										<div>
+											<a href="#" class="article_hot">觉醒公测开启 海量更新携超强福利点燃夏季!</a>
+											<ul class="article_con_1">
+												<li>
+													<span></span>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>公告</h3>
+										<input type="radio" name="radioNews" />
+										<div>
+											<a href="#" class="article_hot">觉醒公测开启 海量更新携超强福利点燃夏季!</a>
+											<ul class="article_con_1">
+												<li>
+													<span></span>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>活动</h3>
+										<input type="radio" name="radioNews" />
+										<div>
+											<a href="#" class="article_hot">觉醒公测开启 海量更新携超强福利点燃夏季!</a>
+											<ul class="article_con_1">
+												<li>
+													<span></span>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>媒体</h3>
+										<input type="radio" name="radioNews" />
+										<div>
+											<a href="#" class="article_hot">觉醒公测开启 海量更新携超强福利点燃夏季!</a>
+											<ul class="article_con_1">
+												<li>
+													<span></span>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>玩家</h3>
+										<input type="radio" name="radioNews" />
+										<div>
+											<a href="#" class="article_hot">觉醒公测开启 海量更新携超强福利点燃夏季!</a>
+											<ul class="article_con_1">
+												<li>
+													<span></span>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>攻略</h3>
+										<input type="radio" name="radioNews" />
+										<div>
+											<a href="#" class="article_hot">觉醒公测开启 海量更新携超强福利点燃夏季!</a>
+											<ul class="article_con_1">
+												<li>
+													<span></span>
+													<a href="#">[攻略][体验服爆料]展现科学之力 重炮手转职技能一览</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[攻略][体验服爆料]展现科学之力 重炮手转职技能一览</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[攻略][体验服爆料]展现科学之力 重炮手转职技能一览</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[攻略][体验服爆料]展现科学之力 重炮手转职技能一览</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[攻略][体验服爆料]展现科学之力 重炮手转职技能一览</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[攻略][体验服爆料]展现科学之力 重炮手转职技能一览</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<span></span>
+													<a href="#">[攻略][体验服爆料]展现科学之力 重炮手转职技能一览</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<a href="">+</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="ac_carousel">
+							<div class="slider_pic">
+								<!-- <img src="./images/index/1806/1531354525348454961new.jpg" /> -->
+								<ul>
+									<li>
+										<span></span>
+										<div style="display:block;">
+											<img src="./images/index/1531354525348454961new.jpg" />
+										</div>
+									</li>
+									<li>
+										<span></span>
+										<div>
+											<img src="./images/index/1533165621112395166.jpg" />
+										</div>
+									</li>
+									<li>
+										<span></span>
+										<div>
+											<img src="./images/index/1533612615973663994new.jpg" />
+										</div>
+									</li>
+									<li>
+										<span></span>
+										<div>
+											<img src="./images/index/1534357861350025049new.jpg" />
+										</div>
+									</li>
+									<li>
+										<span></span>
+										<div>
+											<img src="./images/index/1534731434156452776new.jpg" />
+										</div>
+									</li>
+									<li>
+										<span></span>
+										<div>
+											<img src="./images/index/1534385680926002503new.jpg" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="slider_type">
+								<a href="">官方</a>
+								<a href="">合作</a>
+							</div>
+						</div>
+						<div class="s_video">
+							<div class="s_video_top">
+								<a href="">
+									<img src="./images/index/1530138419132346801.jpg" />
+									<span></span>
+									<div>
+										<p>新职业街霸登场</p>
+										<span>查看</span>
+									</div>
+								</a>
+							</div>
+							<div class="s_video_bottom">
+								<a href="">
+									<img src="./images/index/1530147982391832985.jpg" />
+									<span></span>
+									<div>
+										<p>全新冒险版本</p>
+										<span>查看</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="mid_area_bottom">
+						<a href="#">
+							<img src="./images/index/0827/1534968560773468777.jpg" />
+						</a>
+						<a href="#">
+							<img src="./images/index/0827/1534964311588061458.jpg" />
+						</a>
+						<a href="#">
+							<img src="./images/index/0827/1531347681750213322.jpg" />
+						</a>
+						<a href="#">
+							<img src="./images/index/0827/1534470349131329514.jpg" />
+						</a>
+						<a href="#">
+							<img src="./images/index/0827/1534919734381991270.png" />
+						</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</section>
+		</section>
+
+		<!-- 主体内容下半部分 -->
+		<section class="main_box_b">
+			<section class="bottom_area">
+				<section class="bottom_sidebar">
+					<div class="sidebar_top">
+						<div class="commnity_box">
+							<!-- <a href="">社区APP</a>
+							<a href="">微信公众号</a>
+							<div class="clear"></div>
+							<div class="shequ">
+								<div class="shequ_bg">
+									<img src="./images/index/qc-shequ.png" width="100%" />
+								</div>
+							</div>
+							<div class="wx_gzh"></div> -->
+
+							<ul>
+								<li>
+									<input type="radio" name="commnity" checked />
+									<p>社区APP</p>
+									<div>
+										<div>
+											<img src="images/index/qc-shequ.png" width="100%" />
+										</div>
+									</div>
+								</li>
+								<li>
+									<input type="radio" name="commnity" />
+									<p>微信公众号</p>
+									<div>
+										<div>
+											<img src="images/index/qc-wx.jpg" width="100%" />
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="coo_box">
+							<ul class="coo_icon">
+								<li>
+									<a href="">
+										<span></span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span></span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span></span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span></span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span></span>
+									</a>
+								</li>
+							</ul>
+							<div class="coo_company">
+								<h3>合作媒体</h3>
+								<p></p>
+								<div class="coo_company_list">
+									<ul>
+										<li><a href="">17173</a></li>
+										<li><a href="">多玩</a></li>
+										<li><a href="">178</a></li>
+										<li><a href="">52PK</a></li>
+										<li><a href="">电玩巴士</a></li>
+										<li><a href="">太平洋游戏</a></li>
+										<li><a href="">特玩网</a></li>
+										<li><a href="">星空游民</a></li>
+										<li><a href="">COLG</a></li>
+										<li><a href="">着迷网</a></li>
+										<li><a href="">NGA玩家社区</a></li>
+										<li><a href="">5676</a></li>
+										<li><a href="">全球电竞网</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<!-- sidebar_bottom -->
+					<div class="sidebar_bottom">
+						<ul>
+							<li>
+								<input type="radio" name="bijiben" checked />
+								<div>
+									<ul>
+										<li>
+											<input type="radio" name="fluency" checked />
+											<div>
+												<p>
+													<span>CPU</span>
+													推荐第六代智能英特尔i5笔记本处理器（标准电压）
+												</p>
+												<p>
+													<span>内存</span>
+													4G
+												</p>
+												<p>
+													<span>显卡</span>
+													GTX 960M/GTX 950M
+												</p>
+												<p>
+													<span>硬盘</span>
+													7200转机械硬盘
+												</p>
+												<p>
+													<span>系统</span>
+													win7,win10推荐使用64位系统
+												</p>
+											</div>
+											<h4>最低</h4>
+										</li>
+										<li>
+											<input type="radio" name="fluency" />
+											<div>
+												<p>
+													<span>CPU</span>
+													推荐第六代智能英特尔i5笔记本处理器（标准电压）
+												</p>
+												<p>
+													<span>内存</span>
+													8G
+												</p>
+												<p>
+													<span>显卡</span>
+													GTX 1050Ti/GTX 1050
+												</p>
+												<p>
+													<span>硬盘</span>
+													7200转机械硬盘或固态硬盘
+												</p>
+												<p>
+													<span>系统</span>
+													win7,win10推荐使用64位系统
+												</p>
+											</div>
+											<h4>流畅</h4>
+										</li>
+										<li>
+											<input type="radio" name="fluency" />
+											<div>
+												<p>
+													<span>CPU</span>
+													推荐第六代智能英特尔i7笔记本处理器（标准电压）
+												</p>
+												<p>
+													<span>内存</span>
+													8G
+												</p>
+												<p>
+													<span>显卡</span>
+													GTX 1060
+												</p>
+												<p>
+													<span>硬盘</span>
+													7200转机械硬盘或固态硬盘
+												</p>
+												<p>
+													<span>系统</span>
+													win7,win10推荐使用64位系统
+												</p>
+											</div>
+											<h4>推荐</h4>
+										</li>
+										<li>
+											<input type="radio" name="fluency" />
+											<div>
+												<p>
+													<span>CPU</span>
+													推荐第七代智能英特尔i7笔记本处理器（标准电压）
+												</p>
+												<p>
+													<span>内存</span>
+													16G
+												</p>
+												<p>
+													<span>显卡</span>
+													GTX 1060
+												</p>
+												<p>
+													<span>硬盘</span>
+													7200转机械硬盘或固态硬盘
+												</p>
+												<p>
+													<span>系统</span>
+													win7,win10推荐使用64位系统
+												</p>
+											</div>
+											<h4>顶级</h4>
+										</li>
+									</ul>
+								</div>
+								<h3>笔记本</h3>
+							</li>
+							<li>
+								<input type="radio" name="bijiben" />
+								<div>
+									<ul>
+										<li>
+											<input type="radio" name="fluency2" checked />
+											<div>
+												<p>
+													<span>CPU</span>
+													推荐第五代及以上智能英特尔酷睿i3处理器
+												</p>
+												<p>
+													<span>内存</span>
+													4G
+												</p>
+												<p>
+													<span>显卡</span>
+													GT 730/GT 630
+												</p>
+												<p>
+													<span>硬盘</span>
+													7200转机械硬盘
+												</p>
+												<p>
+													<span>系统</span>
+													win7,win10推荐使用64位系统
+												</p>
+											</div>
+											<h4>最低</h4>
+										</li>
+										<li>
+											<input type="radio" name="fluency2" />
+											<div>
+												<p>
+													<span>CPU</span>
+													推荐第五代及以上智能英特尔酷睿i5处理器
+												</p>
+												<p>
+													<span>内存</span>
+													8G
+												</p>
+												<p>
+													<span>显卡</span>
+													GTX 750Ti/GTX 750/GTX 650Ti/GT 1030
+												</p>
+												<p>
+													<span>硬盘</span>
+													7200转机械硬盘或固态硬盘
+												</p>
+												<p>
+													<span>系统</span>
+													win7,win10推荐使用64位系统
+												</p>
+											</div>
+											<h4>流畅</h4>
+										</li>
+										<li>
+											<input type="radio" name="fluency2" />
+											<div>
+												<p>
+													<span>CPU</span>
+													推荐第五代及以上智能英特尔酷睿i7处理器
+												</p>
+												<p>
+													<span>内存</span>
+													8G
+												</p>
+												<p>
+													<span>显卡</span>
+													GTX 1050/GTX 1050TI/GTX 960
+												</p>
+												<p>
+													<span>硬盘</span>
+													7200转机械硬盘或固态硬盘
+												</p>
+												<p>
+													<span>系统</span>
+													win7,win10推荐使用64位系统
+												</p>
+											</div>
+											<h4>推荐</h4>
+										</li>
+										<li>
+											<input type="radio" name="fluency2" />
+											<div>
+												<p>
+													<span>CPU</span>
+													推荐第七代及以上智能英特尔酷睿i7处理器
+												</p>
+												<p>
+													<span>内存</span>
+													16G
+												</p>
+												<p>
+													<span>显卡</span>
+													GTX 1060
+												</p>
+												<p>
+													<span>硬盘</span>
+													7200转机械硬盘或固态硬盘
+												</p>
+												<p>
+													<span>系统</span>
+													win7,win10推荐使用64位系统
+												</p>
+											</div>
+											<h4>顶级</h4>
+										</li>
+									</ul>
+								</div>
+								<h3>台式机</h3>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<section class="bottom_main_area">
+					<section class="main_area_top">
+						<section class="main_area_topL">
+							<div class="newsBox_con">
+								<!-- <div class="newsBox_con_title">
+									<div class="newsBox_h">
+										<a href="">
+											<h3>攻略</h3>
+										</a>
+										<a href="">综合</a>
+										<a href="">职业</a>
+										<a href="">副本</a>
+										<a href="">装备</a>
+										<a href="">DIY</a>
+									</div>
+									<a href="">+</a>
+								</div> -->
+
+								<ul>
+									<li>
+										<h3>攻略</h3>
+									</li>
+									<li>
+										<h3>综合</h3>
+										<input type="radio" name="radio22" checked />
+										<div>
+											<ul class="article_con_1">
+												<li>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">【活动】每日福利重磅来袭 版本更新赠礼！</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+											<div>
+												<a href=""><img src="./images/index/1806/1531439803014288693.jpg" /></a>
+												<a href=""><img src="./images/index/1806/1531439754963626784.jpg" /></a>
+											</div>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>职业</h3>
+										<input type="radio" name="radio22" />
+										<div>
+											<ul class="article_con_1">
+												<li>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">街霸同人内容征集活动获奖公告</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+											<div>
+												<a href=""><img src="./images/index/1806/1531439856416737036.jpg" /></a>
+												<a href=""><img src="./images/index/1806/1531439888260456024.jpg" /></a>
+											</div>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>副本</h3>
+										<input type="radio" name="radio22" />
+										<div>
+											<ul class="article_con_1">
+												<li>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">【活动】迎接“魔方之眼”边境财团备战福利！</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+											<div>
+												<a href=""><img src="./images/index/1806/1531439915997910407.jpg" /></a>
+												<a href=""><img src="./images/index/1806/1531439938683572341.jpg" /></a>
+											</div>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>装备</h3>
+										<input type="radio" name="radio22" />
+										<div>
+											<ul class="article_con_1">
+												<li>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">[媒体]专业分析公测版本不灭与新武器的抉择</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+											<div>
+												<a href=""><img src="./images/index/1806/1531439980903059802.jpg" /></a>
+												<a href=""><img src="./images/index/1806/1531440007242163095.jpg" /></a>
+											</div>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<h3>DIY</h3>
+										<input type="radio" name="radio22" />
+										<div>
+											<ul class="article_con_1">
+												<li>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+												<li>
+													<a href="#">[玩家][先遣服速报]边境财团 最新兑换物品抢先看</a>
+													<i>8/16</i>
+												</li>
+											</ul>
+											<div>
+												<a href=""><img src="./images/index/1806/1531440034326952361.jpg" /></a>
+												<a href=""><img src="./images/index/1806/1531440092680593784.jpg" /></a>
+											</div>
+										</div>
+										<i></i>
+									</li>
+									<li>
+										<a href="">+</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+						<!-- main_area_topR -->
+						<section class="main_area_topR">
+							<div class="topR_inner">
+								<div class="inner_title">
+									<div class="topR_title_h">
+										<a href="">
+											<h3>视频</h3>
+										</a>
+										<a href="">热门视频</a>
+									</div>
+									<a href="#">+</a>
+								</div>
+								<div class="inner_content">
+									<ul>
+										<li>
+											<a href="#">
+												<img src="./images/index/0827/86894156723187.jpg" />
+												<span></span>
+												<div>
+													<p>DIY玩法之大富翁</p>
+													<span>查看</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./images/index/0827/90142447950458.jpg" />
+												<span></span>
+												<div>
+													<p>冒险岛2也能玩五子棋喔</p>
+													<span>查看</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./images/index/0827/59957447582538.jpg" />
+												<span></span>
+												<div>
+													<p>萌妹子献唱 岛2搞笑改编达拉崩吧</p>
+													<span>查看</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./images/index/0827/544131523990032.jpg" />
+												<span></span>
+												<div>
+													<p>冒险岛2五人合奏-坏苹果</p>
+													<span>查看</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./images/index/0827/86078144792702.jpg" />
+												<span></span>
+												<div>
+													<p>画一只霸气四射的女汉子街霸</p>
+													<span>查看</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./images/index/0827/66693839269211.jpg" />
+												<span></span>
+												<div>
+													<p>《茅屋爷爷讲故事》街霸篇</p>
+													<span>查看</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<section class="main_area_bottom">
+						<div class="bott_title">
+							<h3>
+								<span></span>
+								<a href="">同萌会</a>
+							</h3>
+							<div>
+								<a href="">最新</a>
+								<a href="">攻略</a>
+								<a href="">DIY</a>
+								<a href="">娱乐</a>
+								<a href="">插画</a>
+								<a href="">漫画</a>
+							</div>
+							<a href="">+</a>
+						</div>
+						<div class="picture">
+							<div class="pic_left">
+								<a href="">
+									<img src="./images/index/1531699185014320000.jpg" />
+								</a>
+								<a href="">
+									<img src="./images/index/1531438907779457673.jpg" />
+								</a>
+							</div>
+							<div class="pic_right">
+								<ul>
+									<li>
+										<a href="">
+											<img src="./images/index/250.jpg" width="100%" />
+											<div class="pic_shadow"></div>
+											<div class="pic_author">
+												<p>快乐七夕</p>
+												<p>作者：yang ppppp</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<img src="./images/index/250.jpg" />
+											<div class="pic_shadow"></div>
+											<div class="pic_author">
+												<p>快乐七夕</p>
+												<p>作者：yang ppppp</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<img src="./images/index/250.jpg" />
+											<div class="pic_shadow"></div>
+											<div class="pic_author">
+												<p>快乐七夕</p>
+												<p>作者：yang ppppp</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<img src="./images/index/250.jpg" />
+											<div class="pic_shadow"></div>
+											<div class="pic_author">
+												<p>快乐七夕</p>
+												<p>作者：yang ppppp</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<img src="./images/index/250.jpg" />
+											<div class="pic_shadow"></div>
+											<div class="pic_author">
+												<p>快乐七夕</p>
+												<p>作者：yang ppppp</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<img src="./images/index/250.jpg" />
+											<div class="pic_shadow"></div>
+											<div class="pic_author">
+												<p>快乐七夕</p>
+												<p>作者：yang ppppp</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</section>
+			</section>
+		</section>
+
+		<!-- 主体底部两个人物 -->
+		<div class="cartoon">
+			<img class="cartoon_img_l" src="./images/index/b-l-limg.png" />
+			<img class="cartoon_img_r" src="./images/index/b-r-img.png" />
+		</div>
+	</main>
+
+	<!-- 网页底部 -->
+	<footer class="clear">
+		<div class="cpright_box">
+			<div class="cpright">
+				<div class="footer_left">
+					<a href=""><img src="./images/index/foot-light.png"></a>
+					<a href="">
+						<span></span>
+					</a>
+				</div>
+				<ul class="footer_right">
+					<li>
+						<a href="">腾讯互动娱乐</a><span> | </span>
+						<a href="">服务条款</a><span> | </span>
+						<a href="">隐私政策</a><span>|</span>
+						<a href="">腾讯游戏招聘</a><span> | </span>
+						<a href="">腾讯游戏客服</a><span> | </span>
+						<a href="">游戏地图</a><span> | </span>
+						<a href="">商务合作</a><span> | </span>
+						<a href="">腾讯网</a><span> | </span>
+						<a href="">网站导航</a>
+					</li>
+					<li>
+						<a href="">腾讯公司版权所有</a>
+					</li>
+					<li>COPYRIGHT © 1998 - 2018 TENCENT. ALL RIGHTS RESERVED.</li>
+					<li>
+						<a href="">粤网文[2017]6138-1456号</a><span> | </span>
+						<a href="">新出网证（粤）字010号</a>
+					</li>
+					<li>
+						<img src="./images/index/icplogo.png" />
+						<a href="">文网游进字[2016]0083号</a><span> | </span>新广出审[2016]783号<span> | </span>出版物号：ISBN 978-7-89988-706-6 | 全国文化市场统一举报电话:12318
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

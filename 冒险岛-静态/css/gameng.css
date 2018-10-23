@@ -1,0 +1,595 @@
+main{
+	height:2700px;
+	background:#fff;
+}
+.gameng_nav{
+	width:100%;
+	height:47px;
+	background:url('../images/gameng/top-header-bg.png') repeat-x;
+}
+.navbox{
+	width:1803px;
+	height:47px;
+	margin:0 auto;
+}
+.navbox_list{
+	width:600px;
+	height:47px;
+	float:left;
+	/*background:red;*/
+}
+.navbox_list>a{
+	height:47px;
+	padding:0 10px;
+	display:block;
+	float:left;
+	line-height:47px;
+	color:white;
+}
+
+.navbox_login{
+	width:372px;
+	height:47px;
+	float:right;
+	/*background:skyblue;*/
+}
+.navbox_login>p{
+	width:150px;
+	height:47px;
+	float:left;
+	font-size:14px;
+	margin:15px 0 0 0 ;
+	position:absolute;
+	color:white;
+	/*background:red;*/
+	z-index:3;
+}
+.navbox_login>p>img{
+	float:left;
+}
+.navbox_login>h2{
+	width:100px;
+	height:32px;
+	line-height:32px;
+	float:left;
+	margin:7.5px 0 0 165px;
+	background:url('../images/gameng/top-header-bg.png') no-repeat 0 -144px;
+}
+.navbox_login>h2>a{
+	float:left;
+	margin:0 0 0 15px;
+}
+.navbox_login>h2>span{
+	width:9px;
+	height:13px;
+	display:block;
+	float:left;
+	margin:9px 0 0 12px;
+	background:url('../images/gameng/top-header-bg.png') no-repeat 0 -58px;
+}
+.navbox_login>span{
+	width:107px;
+	height:32px;
+	line-height:32px;
+	display:block;
+	float:left;
+	text-align:center;
+	margin:7.5px 0 0 0;
+	background:url('../images/gameng/top-header-bg.png') no-repeat 0 -208px;
+}
+.navbox_login a{
+	color:white;
+}
+
+
+.gameng_bg{
+	width:100%;
+	height:693px;
+	position:relative;
+	overflow:hidden;
+	background:#ffe100;
+}
+.tree{
+	width:3806px;
+	height:300px;
+	position:absolute;
+	left:-1903px;
+	bottom:46px;
+	z-index:1;
+}
+.tree>img{
+	width:1903px;
+	display:block;
+	float:left;
+	margin:60px 0 0 0;
+	animation:img-run linear 10s infinite;
+}
+@keyframes img-run {
+	100%{
+		transform:translateX(1903px);
+	}
+}
+.car_move{
+	width:552px;
+	height:282px;
+	left:700px;
+	bottom:43px;
+	position:absolute;
+	z-index:3;
+	animation:car-move ease-out 1.5s 1;
+	animation-fill-mode:forwards;
+}
+@keyframes car-move {
+	0%{
+		transform:translateX(1200px);
+	}
+	100%{
+		transform:translateX(0px);
+	}
+}
+.car{
+	width:552px;
+	height:282px;
+	position:absolute;
+	z-index:2;
+	background:url('../images/gameng/car.png') no-repeat;
+	animation:car-run linear 1.5s infinite;
+}
+@keyframes car-run {
+	0%{
+		transform:translateY(0px);
+	}
+	50%{
+		transform:translateY(-10px);
+	}
+	100%{
+		transform:translateY(0px);
+	}
+}
+.cloud_a{
+	width:186px;
+	height:99px;
+	position:absolute;
+	top:298px;
+	left:200px;
+	background:url('../images/gameng/sp.png') no-repeat;
+	animation:cloud-run linear 6s infinite;
+}
+@keyframes cloud-run {
+	0%{
+		transform:translateX(0px);
+	}
+	25%{
+		transform:translateX(50px);
+	}
+	50%{
+		transform:translateX(0px);
+	}
+	75%{
+		transform:translateX(-50px);
+	}
+	100%{
+		transform:translateX(0px);
+	}
+}
+.cloud_b{
+	width:230px;
+	height:85px;
+	position:absolute;
+	top:298px;
+	right:200px;
+	background:url('../images/gameng/sp.png') no-repeat -198px 0;
+	animation:cloud-run linear 10s infinite;
+}
+.duck{
+	width:116px;
+	height:146px;
+	position:absolute;
+	margin:60px 0 0 93px;
+	background:url('../images/gameng/car.png') no-repeat -322px -292px;
+	animation:duck-move linear 3s infinite;
+	transform-origin:center bottom;
+}
+@keyframes duck-move {
+	0%{
+		transform:rotateZ(0deg);
+	}
+	25%{
+		transform:rotateZ(6deg);
+	}
+	50%{
+		transform:rotateZ(0deg);
+	}
+	75%{
+		transform:rotateZ(-6deg);
+	}
+	100%{
+		transform:rotateZ(0deg);
+	}
+}
+.animal_a{
+	width:124px;
+	height:147px;
+	position:absolute;
+	top:-127px;
+	left:32px;
+	z-index:2;
+	background:url('../images/gameng/car.png') no-repeat -114px -292px;
+	animation:animal_a linear 2s infinite;
+	transform-origin:50% 100% 0;
+}
+@keyframes animal_a{
+	0%{
+		transform:scaleY(0.85);
+	}
+	50%{
+		transform:scaleY(1.0);
+	}
+	100%{
+		transform:scaleY(0.85);
+	}
+}
+.animal_b{
+	width:156px;
+	height:131px;
+	position:absolute;
+	top:-63px;
+	left:300px;
+	z-index:2;
+	background:url('../images/gameng/car.png') no-repeat -452px -292px;
+	animation:animal_b linear 1.5s infinite;
+	transform-origin:50% 100% 0;
+}
+@keyframes animal_b {
+	0%{
+		transform:translateY(-10px) rotateZ(0deg);
+	}
+	25%{
+		transform:translateY(0px) rotateZ(5deg);
+	}
+	50%{
+		transform:translateY(-10px) rotateZ(0deg);
+	}
+	75%{
+		transform:translateY(0px) rotateZ(-5deg);
+	}
+	100%{
+		transform:translateY(-10px) rotateZ(0deg);
+	}
+}
+.animal_c{
+	width:58px;
+	height:49px;
+	position:absolute;
+	top:-40px;
+	left:175px;
+	z-index:4;
+	background:url('../images/gameng/car.png') no-repeat -251px -300px;
+}
+.animal_d{
+	width:54px;
+	height:27px;
+	position:absolute;
+	top:-50px;
+	left:177px;
+	z-index:5;
+	background:url('../images/gameng/car.png') no-repeat -251px -365px;
+	animation:animal_d linear 1.5s infinite;
+}
+@keyframes animal_d {
+	0%{
+		transform:translateY(0px);
+	}
+	50%{
+		transform:translateY(-3px);
+	}
+	100%{
+		transform:translateY(0px);
+	}
+}
+.wheel_a{
+	width:104px;
+	height:104px;
+	position:absolute;
+	margin:220px 0 0 105px;
+	background:url('../images/gameng/car.png') no-repeat 0 -292px;
+	animation:wheel-run linear 1s infinite;
+}
+@keyframes wheel-run {
+	100%{
+		transform:rotateZ(-360deg);
+	}
+}
+.wheel_b{
+	width:104px;
+	height:104px;
+	position:absolute;
+	top:220px;
+	left:327px;
+	background:url('../images/gameng/car.png') no-repeat 0 -292px;
+	animation:wheel-run linear 1s infinite;
+}
+.tegongdui{
+	position:absolute;
+	top:100px;
+	left:750px;
+	z-index:2;
+}
+
+.tgd_list{
+	width:100%;
+	height:19px;
+	position:absolute;
+	top:30px;
+	text-align:center;
+	/*background:red;*/
+}
+.tgd_list>a{
+	padding:0 25px;
+	font-size:16px;
+	position:relative;
+	color:white;
+}
+.tgd_list>a>i{
+	width:0;
+	height:10px;
+	display:block;
+	position:absolute;
+	right:0;
+	top:4px;
+	border-left:1px solid #fff;
+}
+.white{
+	width:100%;
+	height:62px;
+	position:absolute;
+	bottom:0;
+	background:#fff;
+}
+
+
+/*mall部分*/
+.mall{
+	width:100%;
+	height:284px;
+	margin:115px 0 0 0;
+	/*background:red;*/
+}
+.mall_inner{
+	width:1450px;
+	height:284px;
+	margin:0 auto;
+	/*background:pink;*/
+}
+.mall_a{
+	width:572px;
+	height:284px;
+	float:left;
+	margin:0 12px 0 0;
+	/*background:orange;*/
+}
+.mall_b{
+	width:572px;
+	height:284px;
+	float:left;
+	margin:0 12px 0 0;
+	/*background:purple;*/
+}
+.mall_c{
+	width:280px;
+	height:284px;
+	float:right;
+	/*background:skyblue;*/
+}
+.mall_inner>div:hover{
+	margin:-5px 0 0 0;
+}
+.mall_inner>.mall_a:hover{
+	margin:-5px 12px 0 0;
+}
+
+
+
+/*actor部分*/
+.actor{
+	width:100%;
+	height:704px;
+	padding:42px 0 0 0;
+	margin:100px 0 0 0;
+	/*background:red;*/
+}
+.ac_intro{
+	width:100%;
+	height:94px;
+	line-height:1.8;
+	margin:0 0 60px 0;
+	text-align:center;
+	font-size:14px;
+	color:#a7a5a3;
+	/*background:pink;*/
+}
+.ac_intro>b{
+	font-weight:bold;
+	line-height:30px;
+	display:block;
+	font-size:24px;
+	color:#3a3330;
+}
+.actor_inner{
+	width:1450px;
+	height:550px;
+	margin:0 auto;
+	/*background:#ffe100;*/
+}
+.actor_inner>div{
+	width:280px;
+	height:550px;
+	float:left;
+	position:relative;
+	margin:0 0 0 12px;
+	text-align:center;
+	background:#ffe100;
+}
+.actor_inner>div>b{
+	position:absolute;
+	top:40px;
+	left:30px;
+	text-align:left;
+	font-size:14px;
+}
+.actor_inner>div>b>i{
+	font-size:64px;
+}
+.actor_inner>div>p{
+	padding:0 30px 0 30px;
+	position:absolute;
+	bottom:120px;
+	left:1px;
+	text-align:left;
+	font-size:13px;
+}
+.actor_inner>div>p>span{
+	display:block;
+	font-size:20px;
+	font-weight:800;
+}
+
+.actor_inner>.actor_inner_a{
+	width:572px;
+	height:550px;
+	margin:0 0 0 0;
+	background:#3683f2;
+}
+
+
+
+/*video部分*/
+.video{
+	width:100%;
+	height:680px;
+	padding:148px 0 123px 0;
+	margin:127px 0 0 0;
+	background:#ffe100;
+}
+.video_inner{
+	width:1450px;
+	height:680px;
+	margin:0 auto;
+	/*background:yellow;*/
+}
+.player{
+	width:1154px;
+	height:680px;
+	/*background:red;*/
+	float:left;
+}
+.vi_sidebar{
+	width:280px;
+	height:680px;
+	float:right;
+	background:pink;
+}
+.vi_list{
+	width:280px;
+	height:286px;
+	padding:38px 0 0 0;
+	background:#3683f2;
+}
+.vi_list>span{
+	width:212px;
+	height:50px;
+	line-height:50px;
+	display:block;
+	margin:0 0 0 36px;
+	border-bottom:2px solid #9bb279;
+	color:#ffe100;
+	font-size:18px;
+}
+.vi_list>p{
+	width:244px;
+	height:144px;
+	margin:24px 0 0 36px;
+	/*background:red;*/
+}
+.vi_list>p>a{
+	width:34px;
+	height:34px;
+	line-height:34px;
+	display:block;
+	float:left;
+	text-align:center;
+	margin:0 11px 11px 0;
+	font-size:16px;
+}
+.vi_list>p>.on{
+	color:#ffe100;
+}
+.vi_list>p>.on1{
+	border-radius:50%;
+	color:#3683f2;
+	background:#ffe100;
+}
+.vi_list>p>.on:hover{
+	border-radius:50%;
+	color:#3683f2;
+	background:#ffe100;
+}
+
+.btn_video{
+	width:280px;
+	height:166px;
+	margin:12px 0 0 0;
+	background:skyblue;
+}
+
+
+
+/*link部分*/
+.ga_link{
+	width:100%;
+	height:415px;
+	margin:120px 0 0 0;
+	/*background:skyblue;*/
+}
+.link_inner{
+	width:1450px;
+	height:280px;
+	margin:0 auto;
+	/*background:pink;*/
+}
+.link_inner>a{
+	width:280px;
+	height:280px;
+	display:block;
+	float:left;
+	margin:0 0 0 12px;
+	background:#ffe100;
+}
+.link_inner>.link_inner_a{
+	width:572px;
+	margin:0 0 0 0;
+}
+.link_inner>a{
+	position:relative;
+	display:block;
+}
+.link_inner>a:hover{
+	margin:-5px 0 0 12px;
+}
+.link_inner>.link_inner_a:hover{
+	margin:-5px 0 0 0;
+}
+.link_inner>a>p{
+	position:absolute;
+	top:20px;
+	left:20px;
+}
+.link_inner>a>p>span{
+	font-size:24px;
+	color:#fff;
+}
+.link_inner>a>p>i{
+	font-size:16px;
+	text-transform:uppercase;
+	color:white;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.div1{
+			width:500px;
+			height:500px;
+			/*position:relative;*/
+			margin:50px auto;
+			border:1px solid red;
+		}
+		.div1>.u1{
+			position:relative;
+		}
+		.div1>.u1>li{
+			width:50px;
+			height:50px;
+			float:left;
+			list-style:none;
+			border:1px solid #ccc;
+		}
+		.div1>.u1>li>input{
+			width:50px;
+			height:50px;
+			display:block;
+			position:absolute;
+			top:0;
+		}
+		.div1>.u1>li>div{
+			width:500px;
+			height:450px;
+			position:absolute;
+			top:50px;
+			left:0;
+			display:none;
+			background:red;
+		}
+		.div1>.u1>li>input:checked+div{
+			display:block;
+		}
+
+		.u2{
+			position:relative;
+			left:0;
+			top:250px;
+		}
+		.u2>li{
+			width:50px;
+			height:50px;
+			border:1px solid red;
+			list-style:none;
+		}
+		.u2>li>input{
+			width:50px;
+			height:50px;
+			display:block;
+			position:absolute;
+		}
+		.div2{
+			width:500px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<ul class="u1">
+			<li>
+				<span>1</span>
+				<input type="radio" name="radio1" checkedd/>
+				<div>
+					1
+				</div>
+			</li>
+			<li>
+				<span>2</span>
+				<input type="radio" name="radio1" />
+				<div>
+					2
+				</div>
+			</li>
+			<li>
+				<span>3</span>
+				<input type="radio" name="radio1" />
+				<div>
+					3
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+	<div class="div2">
+		<ul class="u2">
+			<li>
+				<span>1</span>
+				<input type="radio" name="radio2" />
+			</li>
+			<li>
+				<span>2</span>
+				<input type="radio" name="radio2" />
+			</li>
+			<li>
+				<span>3</span>
+				<input type="radio" name="radio2" />
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,446 @@
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: center; }
+ul, li { list-style-type: none; margin:0px; padding:0px;}
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size: 12px; font-family:"微软雅黑";  }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+aside section,.body{display:block; width:1000px; margin:0 auto;}
+a, a:link { color: #000; text-decoration: none; }/*设置a标签基本样式与伪类选择器设置*/
+a:visited {}
+a:active, a:hover { text-decoration: none; color:#d00000; }
+a:focus { outline: none; } 
+.orange { color:#F26E01;}
+
+.clear {
+	clear:both;
+}
+
+/*网页头部*/
+.header_menu{
+	width:100%;
+	height:23px;
+	background:#424040;
+}
+.menu_con{
+	width:990px;
+	height:23px;
+	margin:0 auto;
+	/*background:pink;*/
+}
+.menu_con>a{
+	height:23px;
+	line-height:23px;
+	float:left;
+	font-size:13px;
+	color:#d5d5d5;
+}
+.menu_right{
+	height:23px;
+	line-height:23px;
+	float:right;
+	font-size:13px;
+}
+.menu_right>span{
+	color:#d5d5d5;
+}
+.menu_right>a{
+	color:#d5d5d5;
+}
+
+
+
+/*网页主体*/
+.pay{
+
+}
+.pay>ul{
+	height:77px;
+	position:relative;
+	padding:0 0 0 465px;
+	border-bottom:1px solid #ccc;
+}
+.pay>ul>.first_li{
+	padding:0 0 0 0;
+	margin:0 144px 0 0;
+}
+.pay>ul>li{
+	height:77px;
+	padding:0 30px;
+	float:left;
+	margin:0 1px 0 0;
+	/*background:red;*/
+}
+.pay>ul>li>h1{
+	font-size:17px;
+	line-height:77px;
+	/*color:#d5d5d5;*/
+}
+.pay>ul>li>input{
+	width:60px;
+	height:77px;
+	position:absolute;
+	top:0;
+	display:block;
+	opacity:0;
+	cursor:pointer;
+}
+.pay>ul>li>div{
+	width:100%;
+	height:723px;
+	display:none;
+	position:absolute;
+	top:78px;
+	left:0;
+	/*background:skyblue;*/
+}
+.pay>ul>li>input:checked+div{
+	display:block;
+}
+.pay>ul>li:hover{
+	background:url('../images/pay/bg.png') repeat-x;
+}
+
+
+
+/*游戏充值*/
+.pay>ul>li>.game_charge{
+	width:100%;
+	height:703px;
+	padding:20px 0 0 0;
+	/*background:pink;*/
+}
+.gameChr_con{
+	width:990px;
+	height:703px;
+	margin:0 auto;
+	/*background:orange;*/
+}
+.gameChr_con>p{
+	height:32px;
+	line-height:32px;
+	padding:5px 0;
+	font-size:14px;
+	color:#666;
+}
+.con_inner{
+	width:988px;
+	height:610px;
+	margin:10px 0;
+	border:1px solid #ccc;
+}
+.inner_left{
+	width:209px;
+	height:400px;
+	float:left;
+	/*background:pink;*/
+}
+.inner_left>.about{
+	width:159px;
+	height:350px;
+	padding:30px 0 20px 0;
+	margin:0 25px 0 25px;
+	/*background:red;*/
+}
+.img{
+	text-align:center;
+}
+.img>img{
+	width:90px;
+	height:90px;
+}
+.img>p{
+	line-height:25px;
+	font-size:18px;
+}
+.img>a{
+	font-size:14px;
+	color:#7f7f7f;
+}
+
+
+.about>p{
+	height:150px;
+	margin:30px 0 0 0;
+	font-size:13px;
+	color:#7f7f7f;
+}
+.about>p>input{
+	float:left;
+	margin:1px 0 0 0;
+}
+.about>p>a{
+	color:blue;
+}
+
+
+
+
+/*右边*/
+.inner_right{
+	width:778px;
+	height:610px;
+	float:left;
+	border-left:1px solid #e5e5e5;
+}
+.rightbox{
+	width:550px;
+	height:560px;
+	padding:20px 0 30px 0;
+	margin:0 114px;
+	/*background:skyblue;*/
+}
+.inputbox{
+	height:27px;
+	line-height:23px;
+	position:relative;
+	/*background:red;*/
+	font-size:15px;
+}
+.inputbox>i{
+	width:25px;
+	height:25px;
+	display:block;
+	position:absolute;
+	top:1px;
+	left:207px;
+	background:url('../images/pay/logink.png') no-repeat;
+}
+.inputbox>input{
+	height:23px;
+	font-size:14px;
+}
+.inputbox>select{
+	width:110px;
+	height:27px;
+	font-size:14px;
+	color:#7f7f7f;
+}
+.inputbox>select>option{
+	width:300px;
+	height:100px;
+	display:block;
+}
+
+
+
+
+/*topup*/
+.topup{
+	width:550px;
+	height:500px;
+	margin:33px 0 0 0;
+	overflow:hidden;
+	/*background:pink;*/
+}
+.topup>ul{
+	width:560px;
+	position:relative;
+}
+.topup>ul>li{
+	width:128px;
+	height:128px;
+	margin:0 10px 0 0;
+	float:left;
+	border:1px solid #ccc;
+}
+.topup>ul>li>.div_mon{
+	width:92px;
+	height:96px;
+	position:relative;
+	padding:24px 18px 8px 18px;
+	/*background:red;*/
+}
+.div_mon>i{
+	width:24px;
+	height:24px;
+	display:block;
+	float:left;
+	background:url('../images/pay/24.png') no-repeat;
+}
+.div_mon>span{
+	display:block;
+	float:left;
+	margin:0 0 0 5px;
+	font-size:22px;
+}
+.div_mon>p{
+	padding:8px 0 0 0 ;
+	margin:70px 0 0 0;
+	text-align:center;
+	font-size:16px;
+	border-top:1px dotted #ccc;
+}
+.div_mon>em{
+	width:25px;
+	height:25px;
+	display:none;
+	position:absolute;
+	top:0;
+	right:0;
+	background:url('../images/pay/sprite.8f31591a9edc7b1d3253f90d5f76dd92.png') no-repeat -60px -138px;
+}
+
+
+
+
+.topup>ul>li>input+div{
+	width:550px;
+	height:275px;
+	display:none;
+	position:absolute;
+	top:170px;
+	left:0;
+	padding:25px 0 0 0;
+	border-top:1px solid #ccc;
+	/*background:pink;*/
+}
+/*充值账号*/
+.topup>ul>li>input{
+	width:128px;
+	height:128px;
+	display:block;
+	position:absolute;
+	top:0;
+	opacity:0;
+	cursor:pointer;
+}
+.topup>ul>li:hover{
+	border:1px solid blue;
+}
+.topup>ul>li:hover>div>em{
+	display:block;
+}
+.topup>ul>li>input:checked+div{
+	display:block;
+}
+.topup>ul>li>input:checked{
+	border:1px solid blue;
+}
+
+
+
+/*支付方式*/
+.topup>ul>li>input+div>p{
+	font-size:14px;
+}
+.topup>ul>li>input+div>ul{
+	width:560px;
+	padding:10px 0 0 0;
+	float:left;
+	position:relative;
+}
+.topup>ul>li>input+div>ul>li{
+	width:128px;
+	height:40px;
+	line-height:40px;
+	float:left;
+	text-align:center;
+	margin:0 10px 0 0;
+	font-size:14px;
+	border:1px solid #ccc;
+	/*background:red;*/
+}
+.topup>ul>li>input+div>ul>li>span{
+	margin:0 0 0 5px;
+	color:#fff;
+	background:orange;
+}
+.topup>ul>li>input+div>ul>li>input{
+	width:128px;
+	height:50px;
+	display:block;
+	position:absolute;
+	top:10px;
+	opacity:0;
+	cursor:pointer;
+}
+.topup>ul>li>input+div>ul>li>div{
+	width:550px;
+	height:180px;
+	display:none;
+	position:absolute;
+	top:60px;
+	left:0;
+	padding:19px 0 0 0;
+	/*background:orange;*/
+}
+.topup>ul>li>input+div>ul>li>div>p{
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	text-align:left;
+	color:#666;
+}
+.topup>ul>li>input+div>ul>li>div>a{
+	width:128px;
+	height:40px;
+	line-height:40px;
+	display:block;
+	margin:20px 0 0 0;
+	font-size:16px;
+	text-align:center;
+	color:#fff;
+	background:skyblue;
+}
+.topup>ul>li>input+div>ul>li>div>h6{
+	font-weight:normal;
+	position:relative;
+}
+.topup>ul>li>input+div>ul>li>div>h5{
+	height:63px;
+	position:relative;
+}
+.topup>ul>li>input+div>ul>li>div>h5>span{
+	width:40px;
+	height:63px;
+	display:block;
+	position:absolute;
+	top:0;
+	left:256px;
+	background:url('../images/pay/sprite.8f31591a9edc7b1d3253f90d5f76dd92.png') no-repeat -138px 0px;
+}
+.topup>ul>li>input+div>ul>li>div>h6>.qq{
+	width:18px;
+	height:18px;
+	display:block;
+	position:absolute;
+	top:11px;
+	left:198px;
+	background:url('../images/pay/sprite.8f31591a9edc7b1d3253f90d5f76dd92.png') no-repeat -181px -20px;
+}
+.topup>ul>li>input+div>ul>li>div>h6>.weixin{
+	width:18px;
+	height:18px;
+	display:block;
+	position:absolute;
+	top:11px;
+	left:198px;
+	background:url('../images/pay/sprite.8f31591a9edc7b1d3253f90d5f76dd92.png') no-repeat -58px -168px;
+}
+.topup>ul>li>input+div>ul>li:hover{
+	border:1px solid blue;
+}
+.topup>ul>li>input+div>ul>li>input:checked+div{
+	display:block;
+}
+
+
+
+/*网页底部*/
+footer{
+	width:100%;
+	height:93px;
+	margin:723px 0 0 0;
+	/*background:skyblue;*/
+}
+footer>p{
+	height:46px;
+	padding:22px 0 25px 0; 
+	text-align:center;
+	color:#999;
+	font-size:13px;
+}
+footer>p>a{
+	color:#999;
+}

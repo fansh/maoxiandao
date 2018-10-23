@@ -1,0 +1,36 @@
+main{
+	height:1200px;
+	background:#fff;
+}
+
+/*尬萌特工队*/
+.gmtgd{
+	width:100%;
+	height:101px;
+	background:pink;
+}
+
+
+.wallp_content{
+	width:100%;
+	/*height:300px;*/
+	margin:78px 0 0 0;
+	background:skyblue;
+}
+.wallp_con_inner{
+	width:1448px;
+	/*height:400px;*/
+	margin:0 auto;
+	background:hotpink;
+}
+.wallp_pic{
+	width:1448px;
+	height:225px;
+	background:orange;
+}
+.wallp_type{
+	width:1448px;
+	height:500px;
+	margin:71px 0 0 0;
+	background:#456;
+}
